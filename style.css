@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+/* .section {
+
+} */
+
+.btn {
+    font-size: 5rem;
+    border: none;
+    /* background-color: transparent; */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    filter: grayscale();
+    /* filter: grayscale(); --> will make it 
+    completely gray and pass 0 in it to make it's 
+    color back */
+    transition: filter 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: grayscale(0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.emoji-name {
+    font-weight: 600;
+    color: darkblue;
+}
